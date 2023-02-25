@@ -38,11 +38,7 @@ var customScripts = {
 		$("a[href='#top']").click(function () {
                 $("html, body").animate({ scrollTop: 0 }, "slow");
                 return false;
-            });
-			$("a[href='#basics']").click(function () {
-                $("html, body").animate({ scrollTop: $('#services').offset().top - 75 }, "slow"); 
-                return false;
-            });
+        });
     },         
 
     animationSecCourses: function() {        		
