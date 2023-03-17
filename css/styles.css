@@ -178,12 +178,50 @@ footer input.form-control {
 	color: #335e8c;
 }
 
+.btn-confirm-email {
+    display: inline-block;
+    background-color: #335e8c;
+    border-radius: 10px !important;
+    border: 4px double #cccccc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    padding: 8px;
+    width: 30%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.btn-confirm-email span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.btn-confirm-email span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.btn-confirm-email:hover {
+    background-color: #f7c2f9;
+}
+.btn-confirm-email:hover span {
+    padding-right: 25px;
+}
+.btn-confirm-email:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
 .form-group {
-    margin: 0 auto;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     width: 75%;
 	color: #a1cad4;
-	font-size: 15px;
+	font-size: 18px;
 }
 
 .form-control {
@@ -511,7 +549,7 @@ footer input.form-control {
 .heading {
     padding: 3px 10px;
     padding-bottom: 15px;
-    margin-bottom: 30px;
+    margin: 0 auto;
     display: block;
 }
 
@@ -916,6 +954,12 @@ footer input.form-control {
 	footer h4 {
 		margin-top: 5%;
 	}
+
+    .btn-confirm-email {
+        text-align: center;
+        font-size: 3.5vmin;
+        width: 40%;
+    }
 }
 
 @media (max-width: 320px) {
@@ -938,4 +982,10 @@ footer input.form-control {
 	footer h4 {
 		margin-top: 5%;
 	}
+
+    .btn-confirm-email {
+        text-align: center;
+        font-size: 3.5vmin;
+        width: 40%;
+    }
 }
