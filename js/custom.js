@@ -41,7 +41,7 @@ var customScripts = {
         });
     },         
 
-    animationSecCourses: function() {        		
+    animationSecActivities: function() {        		
 		if ($('.isotope-container').length > 0) {
 			$(window).load(function() {
 				$('.isotope-container').fadeIn();
@@ -73,18 +73,21 @@ var customScripts = {
 			
     init: function () {
         // Realiza o efeito da caixa de menu sobre as seções
-        //----------------------------------------------------------
+        //---------------------------------------------------------------
         customScripts.onePageNav();        
         
-        // Isotope filters para animação dos botões da seção cursos
-		//----------------------------------------------------------
-        customScripts.animationSecCourses();
+        // Isotope filters para animação dos botões da seção Activities
+		//---------------------------------------------------------------
+        customScripts.animationSecActivities();
 
-        // Tratamento para modais da página
-        //----------------------------------------------------------
+        // Tratamento para modais da seção Activities
+        //---------------------------------------------------------------
         customScripts.modalElements();        
     }
 }
 $('document').ready(function () {
     customScripts.init(); 	
+    var currentYear = new Date().getFullYear();    
+    $("#copyright-year").text(currentYear);
 });
+
