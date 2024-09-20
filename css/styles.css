@@ -804,6 +804,83 @@ footer input.form-control {
     background: #47afc9 !important;
 }
 
+#modal-thanks .modal-header {
+    background-color: #0a94db;
+    color: white;
+}
+
+#modal-thanks .close {
+    color: white;
+}
+
+#modal-thanks .modal-body {
+    text-align: center; 
+    font-size: 16px; 
+    line-height: 1.5;
+}
+
+#modal-thanks .modal-footer {
+    border-top: none; 
+    text-align: center;
+}
+
+#modal-thanks .btn {
+    width: 20%; 
+    background-color: #0a94db;
+}
+
+/* Estilo para inputs válidos */
+input.is-valid, textarea.is-valid {
+    border-color: #28a745; /* Verde para válidos */
+    background-color: #d4edda;
+    color: #155724;
+}
+  
+/* Estilo para inputs inválidos */
+input.is-invalid, textarea.is-invalid {
+    border-color: #dc3545; /* Vermelho para inválidos */
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Para aumentar a visibilidade */
+input.is-invalid:focus, textarea.is-invalid:focus {
+    border-color: #bd2130; /* Vermelho mais escuro no foco */
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.75); /* Brilho vermelho */
+}
+
+input.is-invalid::placeholder, textarea.is-invalid::placeholder {
+    color: #dc3545; /* Placeholder vermelho */
+}  
+
+/* Estilos específicos para resoluções de 2560px */
+@media (min-width: 2560px) {
+    .container {
+        max-width: 1440px;
+        padding: 20px;
+    }
+  
+    .banner-container img {
+        width: 100%;           
+        height: auto;          
+        object-fit: cover;    
+    }
+
+    .header .navbar-brand {
+        padding-left: 0;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+  
+    p {
+      font-size: 1.5rem;
+    }
+  
+    
+}
+
 @media (min-width: 768px) {
     .header .navbar-brand {
         padding-left: 0;

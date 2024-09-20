@@ -85,9 +85,46 @@ var customScripts = {
         customScripts.modalElements();        
     }
 }
+
 $('document').ready(function () {
     customScripts.init(); 	
     var currentYear = new Date().getFullYear();    
-    $("#copyright-year").text(currentYear);
+    $("#copyright-year").text(currentYear);                        
 });
+
+document.getElementById('contactfrm').addEventListener('submit', function(event) {
+    var form = this;
+
+    // Verifica se o formulário é válido
+    if (!form.checkValidity()) {        
+        event.preventDefault();  // Impede o envio do formulário
+        event.stopPropagation();  // Para a propagação do evento
+      
+        // Adiciona classes de validação nos inputs inválidos
+        var inputs = document.querySelectorAll('#contactfrm input, #contactfrm textarea');
+        inputs.forEach(function(input) {
+            if (!input.checkValidity()) {
+                input.classList.remove('is-valid');
+                input.classList.add('is-invalid');
+            } else {
+                input.classList.remove('is-invalid');
+                input.classList.add('is-valid');
+            }
+        });
+        
+        form.classList.add('was-validated');  // Adiciona a classe de validação ao form     
+    } else {
+      // O formulário é válido, então pode ser enviado
+      event.preventDefault();
+      
+      $('#modal-thanks').modal('show');
+
+      // Fecha o modal automaticamente após 3 segundos
+      setTimeout(function() {
+        $('#modal-thanks').modal('hide');
+        $('#contactfrm').off('submit').submit(); // Envio do formulário
+      }, 3000);
+    }
+});
+
 
