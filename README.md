@@ -1,6 +1,6 @@
 # 🌍 Evolution Language School
 
-**Site institucional da Evolution Language School** — Uma plataforma web moderna e responsiva para uma escola de inglês, desenvolvida com foco em experiência do usuário, acessibilidade e funcionalidades interativas.
+**Site institucional da Evolution Language School** — Uma plataforma web e responsiva para uma escola de inglês, desenvolvida com foco em experiência do usuário, acessibilidade e funcionalidades interativas.
 
 **Status:** ✅ Em produção | **Domínio:** [evolution-debora.com.br](https://evolution-debora.com.br)
 
@@ -8,7 +8,7 @@
 
 ## 📋 Visão Geral
 
-O **Evolution Language School** é um site institucional completo para uma escola de inglês localizada em Augusto Pestana e região. O projeto apresenta uma estrutura moderna, responsiva e intuitiva, desenvolvida com tecnologias web fundamentais (HTML, CSS, JavaScript) e frameworks consolidados, oferecendo uma experiência fluida tanto em dispositivos desktop quanto mobile.
+O **Evolution Language School** é um site institucional completo para uma escola de inglês localizada em Augusto Pestana e região. O projeto apresenta uma estrutura responsiva e intuitiva, desenvolvida com tecnologias web fundamentais (HTML, CSS, JavaScript) e frameworks consolidados, oferecendo uma experiência fluida tanto em dispositivos desktop quanto mobile.
 
 O site funciona como vitrine digital da instituição, apresentando informações sobre cursos, atividades, metodologia de ensino e facilitando o contato direto com potenciais alunos através de formulários interativos.
 
@@ -16,7 +16,7 @@ O site funciona como vitrine digital da instituição, apresentando informaçõe
 
 ## 🎯 Objetivo e Contexto
 
-- **Presença Digital:** Consolidar a marca da escola com uma interface moderna, rápida e acessível em qualquer dispositivo.
+- **Presença Digital:** Consolidar a marca da escola com uma interface rápida e acessível em qualquer dispositivo.
 - **Portfólio Técnico:** Demonstrar domínio em desenvolvimento Frontend clássico (HTML5, CSS3, JS, jQuery) e na integração estratégica de bibliotecas de terceiros para criação de interações ricas (galerias filtráveis, scroll dinâmico).
 - **Custo-Benefício:** Entregar uma solução de alta disponibilidade e custo zero de infraestrutura, utilizando hospedagem estática (GitHub Pages).
 
